@@ -8,7 +8,7 @@ html {
 }
 .header {
  background-color: #000000;
- position: sticky;
+ position: fixed;
  padding: 1rem;
  width: 100%;
  top: 0;
