@@ -5,3 +5,10 @@ html {
  background-color: #000000;
  position: sticky;
 }
+.footer {
+    text-align: center;
+}
+.smallt {
+    font-family: Verdana, sans-serif;
+    color: #FFFFFF;
+}
