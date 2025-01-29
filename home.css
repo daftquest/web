@@ -18,12 +18,14 @@ html {
     padding: 1rem;
     gap: 1rem;
 }
+.content-section {
+    gap: 1rem;
+}
 .footer {
     text-align: center;
     background-color: #000000;
     padding: 1rem;
     width: 100%;
-    bottom: 0;
 }
 .smallt {
     font-family: Verdana, sans-serif;
