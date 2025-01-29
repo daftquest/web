@@ -4,9 +4,17 @@ html {
 .header {
  background-color: #000000;
  position: sticky;
+ padding: 1rem;
+}
+.container {
+    margin: 1rem;
+    padding: 1rem;
+    gap: 1rem;
 }
 .footer {
     text-align: center;
+    background-color: #000000;
+    padding: 1rem;
 }
 .smallt {
     font-family: Verdana, sans-serif;
