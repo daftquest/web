@@ -5,6 +5,7 @@ html {
  background-color: #000000;
  position: sticky;
  padding: 1rem;
+ width: 100%;
 }
 .container {
     margin: 1rem;
@@ -15,6 +16,7 @@ html {
     text-align: center;
     background-color: #000000;
     padding: 1rem;
+    width: 100%;
 }
 .smallt {
     font-family: Verdana, sans-serif;
