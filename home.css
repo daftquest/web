@@ -24,12 +24,12 @@
 
 @media screen and (max-width: 501px) {
  h1 {font-size:24px;}
- .header {justify-content:center;}
+ .header {justify-content:center;width:100%;}
 }
 
 @media screen and (min-width: 501px) {
  h1 {font-size:32px;}
- .header {justify-content:left;}
+ .header {justify-content:left;width:95%;transform:translate(2.5%, 0);}
 }
 
 *, *:before, *:after {
@@ -39,7 +39,7 @@
 }
 
 html {
- background-color: hsl(192, 45, 98);
+ background-color: hsl(192, 45%, 98%);
  background-size: cover;
  background-repeat: no-repeat;
  overflow-y: scroll;
@@ -59,9 +59,8 @@ html::-webkit-scrollbar {
  align-self: center;
  padding: 2em;
  border-radius: 0 0 20px 20px;
- width: 95%;
  top: 0;
- transform: translate(2.5%, 0);
+ /* transform: translate(2.5%, 0); */
  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
@@ -69,7 +68,7 @@ html::-webkit-scrollbar {
  display: flex;
  align-items: center;
  justify-content: center;
- max-width: 100%;
+ width: 100%;
  min-height: 1000px;
 }
 
