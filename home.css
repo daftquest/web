@@ -1,33 +1,82 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* Black/Text: hsl(189, 47%, 3%), White/BG: hsl(192, 45%, 98%), Primary: hsl(197, 49%, 54%), Secondary: hsl(194, 48%, 74%), Accent: hsl(33, 90%, 72%) */
+
+
+.outfit-<uniquifier> {
+  font-family: "Outfit", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
 }
+
+
+.roboto-slab-<uniquifier> {
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+@media only screen and (min-width: 0rem) {
+ body, html {
+  scroll-behavior: smooth;
+ }
+}
+
+*, *:before, *:after {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
 html {
- background-color: #cfcfcf;
+ background-color: hsl(192, 45, 98);
+ background-size: cover;
+ background-repeat: no-repeat;
+ overflow-y: scroll;
+ -ms-overflow-style: none;  /* IE and Edge */
+ scrollbar-width: none;  /* Firefox */
 }
+
+html::-webkit-scrollbar {
+    display: none; /* Chrome and the rest */
+}
+
 .header {
- background-color: #000000;
- position: fixed;
- padding: 1rem;
- width: 100%;
+ display:flex;
+ background-color: hsl(197, 49%, 54%);
+ position: sticky;
+ position: webkit sticky;
+ align-self: center;
+ padding: 2em;
+ border-radius: 0 0 20px 20px;
+ width: 95%;
  top: 0;
+ transform: translate(2.5%, 0);
+ box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
-.container {
-    display: flex;
-    padding: 1rem;
-    gap: 1rem;
+
+.divbigbox {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ padding: 2rem 5%;
+ max-width: 100%;
+ min-height: 1000px;
 }
-.content-section {
-    gap: 1rem;
+
+@font-face {
+ font-family: Outfit;
+ src: url(fonts/VariableFont_wght.ttf);
 }
+
 .footer {
     text-align: center;
-    background-color: #000000;
-    padding: 1rem;
+    background-color: hsl(189, 47%, 3%);
+    padding: 2rem;
     width: 100%;
 }
+
 .smallt {
-    font-family: Verdana, sans-serif;
-    color: #FFFFFF;
+    font-family: Roboto Slab, sans-serif;
+    color: hsl(192, 45%, 98%);
 }
