@@ -22,12 +22,12 @@
  }
 }
 
-@media screen and (max-width: 501px) {
+@media screen and (max-width: 699px) {
  h1 {font-size:24px;}
  .header {justify-content:center;width:100%;}
 }
 
-@media screen and (min-width: 501px) {
+@media screen and (min-width: 700px) {
  h1 {font-size:32px;}
  .header {justify-content:left;width:95%;transform:translate(2.5%, 0);}
 }
@@ -60,7 +60,6 @@ html::-webkit-scrollbar {
  padding: 2em;
  border-radius: 0 0 20px 20px;
  top: 0;
- /* transform: translate(2.5%, 0); */
  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
