@@ -57,6 +57,10 @@ html::-webkit-scrollbar {
     display: none; /* Chrome and the rest */
 }
 
+body {
+ padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+}
+
 .header {
  display:flex;
  background-color: hsl(197, 49%, 54%);
