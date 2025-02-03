@@ -23,13 +23,19 @@
 }
 
 @media screen and (max-width: 699px) {
+ .header {justify-content:center;border-radius:0 0 20px 20px;}
  h1 {font-size:24px;}
- .header {justify-content:center;}
+ p {font-size:12px;}
 }
 
 @media screen and (min-width: 700px) {
- h1 {font-size:32px;}
  .header {justify-content:left;}
+ h1 {font-size:24px;}
+ p {font-size:16px;}
+}
+
+@media screen and (min-width: 999px) {
+ h1 {font-size:32px;}
 }
 
 *, *:before, *:after {
@@ -58,9 +64,8 @@ html::-webkit-scrollbar {
  position: webkit sticky;
  align-self: center;
  padding: 2em;
- border-radius: 0 0 20px 20px;
  top: 0;
- box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+ box-shadow: hsl(189, 47%, 3%, 0.2) 0px 8px 24px;
  width: 100%;
 }
 
