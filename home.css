@@ -23,19 +23,19 @@
 }
 
 @media screen and (max-width: 699px) {
- .header {justify-content:center;border-radius:0 0 20px 20px;}
+ .header {border-radius:0 0 20px 20px;}
  h1 {font-size:24px;}
  p {font-size:12px;}
 }
 
 @media screen and (min-width: 700px) {
- .header {justify-content:left;}
- h1 {font-size:24px;}
+ h1 {font-size:28px;}
  p {font-size:16px;}
 }
 
 @media screen and (min-width: 999px) {
  h1 {font-size:32px;}
+ 
 }
 
 *, *:before, *:after {
@@ -57,12 +57,9 @@ html::-webkit-scrollbar {
     display: none; /* Chrome and the rest */
 }
 
-body {
- padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
-}
-
 .header {
  display:flex;
+ justify-content: left;
  background-color: hsl(197, 49%, 54%);
  position: sticky;
  position: webkit sticky;
