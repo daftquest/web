@@ -1,4 +1,19 @@
-/* Black/Text: hsl(189, 47%, 3%), White/BG: hsl(192, 45%, 98%), Primary: hsl(197, 49%, 54%), Secondary: hsl(194, 48%, 74%), Accent: hsl(33, 90%, 72%) */
+:root {
+ --whte: hsl(192, 45%, 98%);
+ --blck: hsl(189, 47%, 3%);
+ --primary: hsl(197, 49%, 54%);
+ --second: hsl(194, 48%, 74%);
+ --accent: hsl(33, 90%, 72%);
+ font-family: Outfit, ui sans-serif;
+}
+
+/* :root {
+ --whte: hsl(195, 40%, 98%);
+ --blck: hsl(189, 47%, 3%);
+ --primary: hsl(197, 70%, 54%);
+ --second: hsl(50, 86%, 55%);
+ --accent: hsl(1, 80%, 65%);
+} */
 
 
 .outfit-<uniquifier> {
@@ -22,20 +37,25 @@
  }
 }
 
-@media screen and (max-width: 699px) {
+@media screen and (max-width: 719px) {
  .header {border-radius:0 0 20px 20px;}
+ .content-block {min-height: 662px;}
  h1 {font-size:24px;}
  p {font-size:12px;}
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 720px) {
+ .content-block {min-height: 646.67px;}
  h1 {font-size:28px;}
  p {font-size:16px;}
 }
 
 @media screen and (min-width: 999px) {
  h1 {font-size:32px;}
- 
+}
+
+@media screen and (min-width: 1920px) {
+ .content-block {min-height:970px;}
 }
 
 *, *:before, *:after {
@@ -45,7 +65,7 @@
 }
 
 html {
- background-color: hsl(192, 45%, 98%);
+ background-color: var(--primary);
  background-size: cover;
  background-repeat: no-repeat;
  overflow-y: scroll;
@@ -57,40 +77,43 @@ html::-webkit-scrollbar {
     display: none; /* Chrome and the rest */
 }
 
-.header {
- display:flex;
- justify-content: left;
- background-color: hsl(197, 49%, 54%);
- position: sticky;
+.navbar {
+ background-color: var(--whte);
+ position: fixed;
  position: webkit sticky;
- align-self: center;
- padding: 2em;
  top: 0;
  box-shadow: hsl(189, 47%, 3%, 0.2) 0px 8px 24px;
  width: 100%;
 }
 
-.divbigbox {
+.header {
+ display:flex;
+ justify-content: space-between;
+ padding: 2em;
+}
+
+#progress-bar{
+ --progress: 0;
+ height: 6px;
+ width: var(--progress);
+ background-color: var(--second);
+}
+
+.content-block {
  display: flex;
  align-items: center;
  justify-content: center;
  width: 100%;
- min-height: 1000px;
-}
-
-@font-face {
- font-family: Outfit;
- src: url(fonts/VariableFont_wght.ttf);
 }
 
 .footer {
-    text-align: center;
-    background-color: hsl(189, 47%, 3%);
-    padding: 2rem;
-    width: 100%;
+ text-align: center;
+ background-color: var(--blck);
+ padding: 2rem;
+ width: 100%;
 }
 
 .smallt {
-    font-family: Roboto Slab, sans-serif;
-    color: hsl(192, 45%, 98%);
+  font-family: Roboto Slab, sans-serif;
+  color: var(--whte);
 }
