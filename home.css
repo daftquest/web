@@ -1,36 +1,3 @@
-:root {
- --whte: hsl(192, 45%, 98%);
- --blck: hsl(189, 47%, 3%);
- --primary: hsl(197, 49%, 54%);
- --second: hsl(194, 48%, 74%);
- --accent: hsl(33, 90%, 72%);
- font-family: Outfit, ui sans-serif;
-}
-
-/* :root {
- --whte: hsl(195, 40%, 98%);
- --blck: hsl(189, 47%, 3%);
- --primary: hsl(197, 70%, 54%);
- --second: hsl(50, 86%, 55%);
- --accent: hsl(1, 80%, 65%);
-} */
-
-
-.outfit-<uniquifier> {
-  font-family: "Outfit", serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-}
-
-
-.roboto-slab-<uniquifier> {
-  font-family: "Roboto Slab", serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-}
-
 @media only screen and (min-width: 0rem) {
  body, html {
   scroll-behavior: smooth;
@@ -68,22 +35,6 @@ html {
  background-color: var(--primary);
  background-size: cover;
  background-repeat: no-repeat;
- overflow-y: scroll;
- -ms-overflow-style: none;  /* IE and Edge */
- scrollbar-width: none;  /* Firefox */
-}
-
-html::-webkit-scrollbar {
-    display: none; /* Chrome and the rest */
-}
-
-.navbar {
- background-color: var(--whte);
- position: fixed;
- position: webkit sticky;
- top: 0;
- box-shadow: hsl(189, 47%, 3%, 0.2) 0px 8px 24px;
- width: 100%;
 }
 
 .header {
@@ -92,28 +43,9 @@ html::-webkit-scrollbar {
  padding: 2em;
 }
 
-#progress-bar{
- --progress: 0;
- height: 6px;
- width: var(--progress);
- background-color: var(--second);
-}
-
 .content-block {
  display: flex;
  align-items: center;
  justify-content: center;
  width: 100%;
-}
-
-.footer {
- text-align: center;
- background-color: var(--blck);
- padding: 2rem;
- width: 100%;
-}
-
-.smallt {
-  font-family: Roboto Slab, sans-serif;
-  color: var(--whte);
 }
