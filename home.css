@@ -45,6 +45,10 @@ a button {
  background-color:var(--primary);
 }
 
+a button b {
+ color: var(--blck);
+}
+
 a button:hover {
  background-color: var(--second);
  cursor: pointer;
