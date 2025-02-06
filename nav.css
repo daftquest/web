@@ -83,7 +83,7 @@ html::-webkit-scrollbar {
 .navbar .header {
  display:flex;
  justify-content: space-between;
- padding: 2rem;
+ padding: 1rem;
  max-height: 15vh;
  width: 100%;
  align-items: center;
