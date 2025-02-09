@@ -1,11 +1,20 @@
 :root {
+ --whte: hsl(264, 56%, 98%);
+ --blck: hsl(273, 58%, 4%);
+ --primary: #663399;
+ --second: hsl(211, 100%, 77%);
+ --accent: hsl(356, 81%, 64%);
+ font-family: Outfit, ui sans-serif;
+}
+
+/* :root {
  --whte: hsl(192, 45%, 98%);
  --blck: hsl(189, 47%, 3%);
  --primary: hsl(197, 49%, 54%);
  --second: hsl(194, 48%, 74%);
  --accent: hsl(33, 90%, 72%);
  font-family: Outfit, ui sans-serif;
-}
+} */
 
 /* :root {
  --whte: hsl(195, 40%, 98%);
@@ -13,7 +22,7 @@
  --primary: hsl(197, 70%, 54%);
  --second: hsl(50, 86%, 55%);
  --accent: hsl(1, 80%, 65%);
-} */
+} OLD PALETTE */
 
 
 .outfit-<uniquifier> {
@@ -113,7 +122,7 @@ html::-webkit-scrollbar {
  --progress: 0;
  height: 6px;
  width: var(--progress);
- background-color: var(--second);
+ background-color: #9966CC;
 }
 
 .footer {
