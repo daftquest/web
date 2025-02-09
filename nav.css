@@ -117,7 +117,10 @@ html::-webkit-scrollbar {
 }
 
 .footer {
- text-align: center;
+ display:flex;
+ justify-content: space-between;
+ flex-wrap:nowrap;
+ overflow:hidden;
  background-color: var(--blck);
  padding: 2rem;
  width: 100%;
