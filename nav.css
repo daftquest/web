@@ -3,7 +3,8 @@
  --blck: hsl(273, 58%, 4%);
  --primary: #663399;
  --second: hsl(211, 100%, 77%);
- --accent: hsl(356, 81%, 64%);
+ /* --accent: hsl(356, 81%, 64%); */
+ --accent: #F1cc38;
  font-family: Outfit, ui sans-serif;
 }
 
@@ -47,7 +48,6 @@
 }
 
 @media screen and (max-width: 719px) {
- .header {border-radius:0 0 20px 20px;}
  h1 {font-size:24px;}
  p {font-size:12px;}
 }
@@ -96,6 +96,10 @@ html::-webkit-scrollbar {
  padding: 1rem;
  width: 100%;
  align-items: center;
+}
+
+.header {
+ background-color: var(--whte);
 }
 
 .header nav {
