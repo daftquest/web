@@ -7,6 +7,7 @@
 @media screen and (max-width: 749px) {
  #INFO-3 {img{margin-bottom:1rem;}}
  #profimage {border-radius:100% 100% 0 0;}
+ .profimage-cont img {max-height:55vh;}
  .content-block {padding:0 1rem;flex-wrap:wrap;align-content:center;}
  h1 {font-size:24px;}
  p {font-size:16px;}
@@ -16,6 +17,7 @@
  h1 {font-size:28px;}
  #INFO-1 {}
  #profimage {border-radius:0 100% 100% 0;}
+ .profimage-cont img {max-height:60vh;}
  .content-block {padding:0 1rem;flex-wrap:nowrap;}
  p {font-size:16px;}
 }
@@ -24,6 +26,7 @@
  h1 {font-size:32px;}
  .content-block h1 {font-size:48px;}
  .content-block {padding:0 2rem;}
+ .profimage-cont img {max-height:65vh;}
 }
 
 @media screen and (min-width: 1920px) {
