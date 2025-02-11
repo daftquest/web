@@ -10,7 +10,7 @@
  .profimage-cont img {max-height:55vh;}
  .content-block {padding:0 1rem;flex-wrap:wrap;align-content:center;}
  h1 {font-size:24px;}
- p {font-size:16px;}
+ .content-block p {font-size:16px;}
 }
 
 @media screen and (min-width: 750px) {
@@ -19,7 +19,7 @@
  #profimage {border-radius:0 100% 100% 0;}
  .profimage-cont img {max-height:60vh;}
  .content-block {padding:0 1rem;flex-wrap:nowrap;}
- p {font-size:16px;}
+ .content-block p {font-size:16px;}
 }
 
 @media screen and (min-width: 1195px) {
