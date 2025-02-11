@@ -5,23 +5,28 @@
 }
 
 @media screen and (max-width: 649px) {
- .header {}
- #INFO-1 {display:block;.text-cont{width:100%;height:60vh;}.profimage-cont{width:100%;height:40vh;justify-content:center;}}
+ #INFO-1 {display:block;.text-cont{width:100%;height:40vh;align-items:flex-end;}.profimage-cont{width:100%;height:50vh;justify-content:center;}}
  #INFO-3 {display:block;.text-cont{width:100%;height:60vh;}.profimage-cont{width:100%;height:40vh;justify-content:center;}}
+ #profimage {border-radius:100% 100% 0 0;}
+ .content-block {padding:0 1rem;}
  h1 {font-size:24px;}
  p {font-size:12px;}
 }
 
 @media screen and (min-width: 650px) {
  h1 {font-size:28px;}
- #INFO-1 {display:flex;.text-cont{width:50vw;height:100vh;}.profimage-cont{width:50vw;height:auto;justify-content:flex-end;align-content:flex-end;align-self:flex-end;}}
+ #INFO-1 {display:flex;.text-cont{width:50vw;height:100vh;align-items:center;}.profimage-cont{width:50vw;height:auto;justify-content:center;align-content:flex-end;align-self:center;}}
  #INFO-3 {display:flex;.text-cont{width:50vw;height:100vh;}.profimage-cont{width:50vw;height:auto;justify-content:flex-start;align-content:flex-end;align-self:flex-end;}}
- p {font-size:20px;}
+ #profimage {border-radius:0 100% 100% 0;}
+ .content-block {padding:0 1rem;}
+ p {font-size:16px;}
 }
 
 @media screen and (min-width: 999px) {
  h1 {font-size:32px;}
- .content-block h1 {font-size:52px;}
+ .content-block h1 {font-size:56px;}
+ .content-block {padding:0 2rem;}
+ p {font-size:20px;}
 }
 
 *, *:before, *:after {
@@ -40,7 +45,6 @@ html {
  height: 100vh;
  display: flex;
  width: 100%;
- padding: 0 2rem;
 }
 
 .content-block a {
