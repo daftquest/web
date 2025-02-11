@@ -4,7 +4,7 @@
  }
 }
 
-@media screen and (max-width: 649px) {
+@media screen and (max-width: 749px) {
  #INFO-3 {img{margin-bottom:1rem;}}
  #profimage {border-radius:100% 100% 0 0;}
  .content-block {padding:0 1rem;flex-wrap:wrap;align-content:center;}
@@ -12,7 +12,7 @@
  p {font-size:16px;}
 }
 
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 750px) {
  h1 {font-size:28px;}
  #INFO-1 {}
  #profimage {border-radius:0 100% 100% 0;}
