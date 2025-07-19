@@ -11,24 +11,30 @@
 
 @font-face {
  font-family: Outfit;
- src: url(fonts/Outfit/Outfit-VariableFont_wght.ttf);
+ font-display: swap;
+ src: url(fonts/Outfit-VariableFont_wght.ttf);
 }
 
 @font-face {
  font-family: "Roboto Slab";
- src: url(fonts/Roboto_Slab/RobotoSlab-VariableFont_wght.ttf);
+ font-display: swap;
+ src: url(fonts/RobotoSlab-VariableFont_wght.ttf);
 }
 
 @media screen and (max-width:699px) {
  #navbar {display:none;}
-}
-
-@media screen and (min-width: 1001px) {
- section p {margin:var(--margin-lg);}
+ .hdiv {text-align:center;font-size:32px;}
+ .taglinediv {text-align:center;font-size:14px;}
+ img {width:90vw;height:auto;align-self:center;}
 }
 
 @media screen and (max-width:1000px) {
  section p {margin:24px;}
+}
+
+@media screen and (min-width: 1001px) {
+ section p {margin:var(--margin-lg);}
+ img {width:auto;height:50%;align-self:center;}
 }
 
 html {
@@ -52,6 +58,7 @@ html::-webkit-scrollbar {
  position: sticky;
  top: 0;
  width: 100%;
+ min-height: fit-content;
 }
 
 #navbar ul li {
