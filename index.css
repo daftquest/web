@@ -21,11 +21,15 @@
  src: url(fonts/RobotoSlab-VariableFont_wght.ttf);
 }
 
-@media screen and (max-width:699px) {
- #navbar {display:none;}
+@media screen and (max-width:799px) {
+ #navbar .navlink {display:none;}
+ ul .hamburg {display:flex;}
  .hdiv {text-align:center;font-size:32px;}
  .taglinediv {text-align:center;font-size:14px;}
- img {width:90vw;height:auto;align-self:center;}
+}
+
+@media screen and (min-width:800px) {
+ ul .hamburg {display:none;}
 }
 
 @media screen and (max-width:1000px) {
@@ -34,7 +38,6 @@
 
 @media screen and (min-width: 1001px) {
  section p {margin:var(--margin-lg);}
- img {width:auto;height:50%;align-self:center;}
 }
 
 html {
