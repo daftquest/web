@@ -19,41 +19,53 @@
 @font-face {
  font-family: Outfit;
  font-display: swap;
- src: url(fonts/Outfit-VariableFont_wght.ttf);
+ src: url(Outfit-VariableFont_wght.ttf);
 }
 
 @font-face {
  font-family: "Roboto Slab";
  font-display: swap;
- src: url(fonts/RobotoSlab-VariableFont_wght.ttf);
+ src: url(RobotoSlab-VariableFont_wght.ttf);
 }
 
 @media screen and (max-width:799px) {
  #navbar .navlink {display:none;}
- ul .hamburg {display:flex;}
  .hdiv {text-align:center;font-size:32px;}
  .taglinediv {text-align:center;font-size:14px;}
 }
 
 @media only screen and (max-device-width:1366px) {
- 
- #hero {background-attachment: scroll;}
+ #hero {background-attachment:scroll;}
+ .bio-card {max-height:40rem;}
 }
 
 @media only screen and (min-device-width:1367px) {
- #hero {background-attachment: fixed;}
+ #hero {background-attachment:fixed;}
+ .bio-card {max-height: 50rem;}
 }
 
 @media screen and (min-width:800px) {
  ul .hamburg {display:none;}
 }
 
-@media screen and (max-width:1000px) {
-
+@media screen and (min-width: 1200px) {
+ .hero-text h2 {font-size: 72px;}
 }
 
-@media screen and (min-width: 1001px) {
+@media screen and (min-width: 1600px) {
+ .hero-text h2 {font-size: 84px;}
+}
 
+@media screen and (min-width: 2000px) {
+ .hero-text h2 {font-size: 96px;}
+}
+
+@media screen and (min-width: 2400px) {
+ .hero-text h2 {font-size: 108px;}
+}
+
+@media screen and (min-width: 2800px) {
+ .hero-text h2 {font-size: 120px;}
 }
 
 html {
@@ -115,14 +127,22 @@ p {
  font-family: 'Roboto Slab', serif;
 }
 
+.hero-text-container {
+ display:flex;
+}
+
+.bio-card-container {
+ display:flex;
+}
+
 .hero-text {
+ margin: 0 1rem;
  max-width:80ch;
  text-align:center;
 }
 
 .bio-card {
- max-height: 50rem;
- max-width: 25rem;
+ max-width: 35rem;
  background-color: var(--whte);
  padding: 1rem;
  margin: 1rem;
