@@ -6,12 +6,12 @@
 }
 
 :root {
- --whte: hsl(264, 56%, 98%);
- --blck: hsl(191, 25%, 5%);
- --blue: hsl(203, 48%, 52%);
- --lblue: hsl(191, 62%, 61%);
- --red: hsl(342, 64%, 48%);
- --yellow: hsl(44, 100%, 43%);
+ --whte: hsl(195, 40%, 98%);
+ --blck: hsl(189, 47%, 3%);
+ --lblue: hsl(197, 70%, 54%);
+ --dblue: hsl(197, 70%, 34%);
+ --red: hsl(1, 80%, 65%);
+ --yellow: hsl(50, 86%, 55%);
  font-family: Outfit, ui sans-serif;
  --margin-lg: 0 12%;
 }
@@ -35,16 +35,25 @@
  .taglinediv {text-align:center;font-size:14px;}
 }
 
+@media only screen and (max-device-width:1366px) {
+ 
+ #hero {background-attachment: scroll;}
+}
+
+@media only screen and (min-device-width:1367px) {
+ #hero {background-attachment: fixed;}
+}
+
 @media screen and (min-width:800px) {
  ul .hamburg {display:none;}
 }
 
 @media screen and (max-width:1000px) {
- section p {margin:24px;}
+
 }
 
 @media screen and (min-width: 1001px) {
- section p {margin:var(--margin-lg);}
+
 }
 
 html {
@@ -72,11 +81,30 @@ html::-webkit-scrollbar {
 }
 
 #navbar ul li {
- color: white;
- padding: .75rem;
- margin: .75rem;
+ margin: 1rem;
  font-family: 'Outfit', sans-serif;
  font-size: 16px;
+}
+
+li a {
+ color: var(--whte);
+ transition-duration: 0.15s;
+}
+
+li a:hover {
+ color: var(--lblue);
+}
+
+.navlink .rbutton {
+ background-color: var(--lblue);
+ transition-duration: 0.15s;
+ border-radius:24px;
+ padding:.75rem;
+ font-family:Outfit;
+}
+
+.navlink .rbutton:hover {
+ background-color: var(--whte);
 }
 
 h1 {
@@ -85,4 +113,25 @@ h1 {
 
 p {
  font-family: 'Roboto Slab', serif;
+}
+
+.hero-text {
+ max-width:80ch;
+ text-align:center;
+}
+
+.bio-card {
+ max-height: 50rem;
+ max-width: 25rem;
+ background-color: var(--whte);
+ padding: 1rem;
+ margin: 1rem;
+ border-radius: 0px;
+}
+
+.bio-card-socbar {
+ display: flex;
+ flex-wrap: wrap;
+ flex-direction: column;
+ justify-content: center;
 }
