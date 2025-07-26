@@ -29,7 +29,8 @@
 }
 
 @media screen and (max-width:799px) {
- #navbar .navlink {display:none;}
+ #navbar {display:none;}
+ #headbar {justify-content:center;}
  .hdiv {text-align:center;font-size:32px;}
  .taglinediv {text-align:center;font-size:14px;}
 }
@@ -46,6 +47,7 @@
 
 @media screen and (min-width:800px) {
  ul .hamburg {display:none;}
+ #headbar {justify-content:space-between;}
 }
 
 @media screen and (min-width: 1200px) {
@@ -85,7 +87,6 @@ html::-webkit-scrollbar {
  background-color: var(--blck);
  display:flex;
  align-items:center;
- justify-content:space-between;
  position: sticky;
  top: 0;
  width: 100%;
