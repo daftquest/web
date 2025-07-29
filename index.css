@@ -28,11 +28,20 @@
  src: url(RobotoSlab-VariableFont_wght.ttf);
 }
 
-@media screen and (max-width:799px) {
- #navbar {display:none;}
- #headbar {justify-content:center;}
- .hdiv {text-align:center;font-size:32px;}
+@media screen and (max-width:499px) {
+ .desktop-headbar {display:none;}
+ .mobile-headbar {display:flex;}
+ .hero-text h2 {text-align:center;font-size:40px;}
  .taglinediv {text-align:center;font-size:14px;}
+ .hero-text-container {align-items:flex-end;padding-top:10vh;}
+}
+
+@media screen and (min-width:500px) {
+ .desktop-headbar {display:flex;}
+ .mobile-headbar {display:none;}
+ .hero-text h2 {text-align:center;font-size:40px;}
+ ul .hamburg {display:none;}
+ .hero-text-container {align-items:center;}
 }
 
 @media only screen and (max-device-width:1366px) {
@@ -42,12 +51,8 @@
 
 @media only screen and (min-device-width:1367px) {
  #hero {background-attachment:fixed;}
+ .hero-text h2 {text-align:center;font-size:48px;}
  .bio-card {max-height: 50rem;}
-}
-
-@media screen and (min-width:800px) {
- ul .hamburg {display:none;}
- #headbar {justify-content:space-between;}
 }
 
 @media screen and (min-width: 1200px) {
@@ -83,14 +88,28 @@ html::-webkit-scrollbar {
     display: none; /* Chrome and the rest */
 }
 
-#headbar {
+.desktop-headbar {
  background-color: var(--blck);
- display:flex;
  align-items:center;
+ justify-content:space-between;
  position: sticky;
  top: 0;
  width: 100%;
- min-height: fit-content;
+ min-height: 80px;
+}
+
+.mobile-headbar {
+ background-color: var(--blck);
+ align-items:center;
+ justify-content:space-between;
+ position: sticky;
+ top: 0;
+ width: 100%;
+ min-height: 80px;
+}
+
+#navbar {
+ display:flex;
 }
 
 #navbar ul li {
@@ -108,7 +127,7 @@ li a:hover {
  color: var(--lblue);
 }
 
-.navlink .rbutton {
+.rbutton {
  background-color: var(--lblue);
  transition-duration: 0.15s;
  border-radius:24px;
@@ -118,6 +137,22 @@ li a:hover {
 
 .navlink .rbutton:hover {
  background-color: var(--whte);
+}
+
+.hamburg {
+ max-height: 32px;
+ width: auto;
+}
+
+#screen-mobile-nav {
+ position: fixed;
+ top: 0;
+ right: 0;
+ bottom: 0;
+ left: 0;
+ background: var(--blck);
+ z-index: 9999;
+ text-align: center;
 }
 
 h1 {
@@ -148,6 +183,7 @@ p {
  padding: 1rem;
  margin: 1rem;
  border-radius: 0px;
+ align-self:center;
 }
 
 .bio-card-socbar {
