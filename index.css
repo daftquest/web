@@ -31,17 +31,23 @@
 @media screen and (max-width:499px) {
  .desktop-headbar {display:none;}
  .mobile-headbar {display:flex;}
- .hero-text h2 {text-align:center;font-size:40px;}
+ .hero-text h1 {text-align:center;font-size:40px;}
  .taglinediv {text-align:center;font-size:14px;}
- .hero-text-container {align-items:flex-end;padding-top:10vh;}
+ .hero-text-container {align-items:flex-end;padding-top:4vh;}
+ .job_div {margin:0 24px;}
 }
 
 @media screen and (min-width:500px) {
  .desktop-headbar {display:flex;}
  .mobile-headbar {display:none;}
- .hero-text h2 {text-align:center;font-size:40px;}
+ .hero-text h1 {text-align:center;font-size:40px;}
  ul .hamburg {display:none;}
  .hero-text-container {align-items:center;}
+ .job_div {margin:0 24px;}
+}
+
+@media screen and (min-width:750px) {
+ .job_div {max-width:80ch;}
 }
 
 @media only screen and (max-device-width:1366px) {
@@ -51,28 +57,28 @@
 
 @media only screen and (min-device-width:1367px) {
  #hero {background-attachment:fixed;}
- .hero-text h2 {text-align:center;font-size:48px;}
+ .hero-text h1 {text-align:center;font-size:48px;}
  .bio-card {max-height: 50rem;}
 }
 
 @media screen and (min-width: 1200px) {
- .hero-text h2 {font-size: 72px;}
+ .hero-text h1 {font-size: 72px;}
 }
 
 @media screen and (min-width: 1600px) {
- .hero-text h2 {font-size: 84px;}
+ .hero-text h1 {font-size: 84px;}
 }
 
 @media screen and (min-width: 2000px) {
- .hero-text h2 {font-size: 96px;}
+ .hero-text h1 {font-size: 96px;}
 }
 
 @media screen and (min-width: 2400px) {
- .hero-text h2 {font-size: 108px;}
+ .hero-text h1 {font-size: 108px;}
 }
 
 @media screen and (min-width: 2800px) {
- .hero-text h2 {font-size: 120px;}
+ .hero-text h1 {font-size: 120px;}
 }
 
 html {
@@ -191,4 +197,43 @@ p {
  flex-wrap: wrap;
  flex-direction: column;
  justify-content: center;
+}
+
+.job_bigdiv {
+    width:100%;
+    display:flex;
+    justify-content: center;
+    flex-wrap:wrap;
+}
+
+.job_div {
+    min-width:60%;
+    display:block;
+    padding: 24px;
+    background-color: var(--whte);
+}
+
+.job_date {
+    padding:8px 12px;
+    border-radius:24px;
+    background-color:var(--yellow);
+    width:fit-content;
+}
+
+.job_title {
+    margin:12px 0;
+}
+
+.job_image {
+    border-radius: 18px;
+    margin:12px 0;
+}
+
+.job_div a {
+    color: var(--dblue);
+    transition-duration: 0.2s;
+}
+
+.job_div a:hover {
+    color: hsl(197, 70%, 14%);
 }
