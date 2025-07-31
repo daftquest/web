@@ -1,0 +1,239 @@
+*, *:before, *:after {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ clear: both;
+}
+
+:root {
+ --whte: hsl(195, 40%, 98%);
+ --blck: hsl(189, 47%, 3%);
+ --lblue: hsl(197, 70%, 54%);
+ --dblue: hsl(197, 70%, 34%);
+ --red: hsl(1, 80%, 65%);
+ --yellow: hsl(50, 86%, 55%);
+ font-family: Outfit, ui sans-serif;
+ --margin-lg: 0 12%;
+}
+
+@font-face {
+ font-family: Outfit;
+ font-display: swap;
+ src: url(Outfit-VariableFont_wght.ttf);
+}
+
+@font-face {
+ font-family: "Roboto Slab";
+ font-display: swap;
+ src: url(RobotoSlab-VariableFont_wght.ttf);
+}
+
+@media screen and (max-width:499px) {
+ .desktop-headbar {display:none;}
+ .mobile-headbar {display:flex;}
+ .hero-text h2 {text-align:center;font-size:40px;}
+ .taglinediv {text-align:center;font-size:14px;}
+ .hero-text-container {align-items:flex-end;}
+ .job_div {margin:0 24px;}
+}
+
+@media screen and (min-width:500px) {
+ .desktop-headbar {display:flex;}
+ .mobile-headbar {display:none;}
+ .hero-text h2 {text-align:center;font-size:40px;}
+ ul .hamburg {display:none;}
+ .hero-text-container {align-items:center;}
+ .job_div {margin:0 24px;}
+}
+
+@media screen and (min-width:750px) {
+ .job_div {max-width:80ch;}
+}
+
+@media only screen and (max-device-width:1366px) {
+ #hero {background-attachment:scroll;}
+ .bio-card {max-height:40rem;}
+}
+
+@media only screen and (min-device-width:1367px) {
+ #hero {background-attachment:fixed;}
+ .hero-text h2 {text-align:center;font-size:48px;}
+ .bio-card {max-height: 50rem;}
+}
+
+@media screen and (min-width: 1200px) {
+ .hero-text h2 {font-size: 72px;}
+}
+
+@media screen and (min-width: 1600px) {
+ .hero-text h2 {font-size: 84px;}
+}
+
+@media screen and (min-width: 2000px) {
+ .hero-text h2 {font-size: 96px;}
+}
+
+@media screen and (min-width: 2400px) {
+ .hero-text h2 {font-size: 108px;}
+}
+
+@media screen and (min-width: 2800px) {
+ .hero-text h2 {font-size: 120px;}
+}
+
+html {
+ background-color: var(--blck);
+ height: 100%;
+ scroll-behavior: smooth;
+ overflow-y: scroll;
+ -ms-overflow-style: none;  /* IE and Edge */
+ scrollbar-width: none;  /* Firefox */
+}
+
+html::-webkit-scrollbar {
+    display: none; /* Chrome and the rest */
+}
+
+.desktop-headbar {
+ background-color: var(--blck);
+ align-items:center;
+ justify-content:space-between;
+ position: sticky;
+ top: 0;
+ width: 100%;
+ min-height: 80px;
+}
+
+.mobile-headbar {
+ background-color: var(--blck);
+ align-items:center;
+ justify-content:space-between;
+ position: sticky;
+ top: 0;
+ width: 100%;
+ min-height: 80px;
+}
+
+#navbar {
+ display:flex;
+}
+
+#navbar ul li {
+ margin: 1rem;
+ font-family: 'Outfit', sans-serif;
+ font-size: 16px;
+}
+
+li a {
+ color: var(--whte);
+ transition-duration: 0.15s;
+}
+
+li a:hover {
+ color: var(--lblue);
+}
+
+.rbutton {
+ background-color: var(--lblue);
+ transition-duration: 0.15s;
+ border-radius:24px;
+ padding:.75rem;
+ font-family:Outfit;
+}
+
+.navlink .rbutton:hover {
+ background-color: var(--whte);
+}
+
+.hamburg {
+ max-height: 32px;
+ width: auto;
+}
+
+#screen-mobile-nav {
+ position: fixed;
+ top: 0;
+ right: 0;
+ bottom: 0;
+ left: 0;
+ background: var(--blck);
+ z-index: 9999;
+ text-align: center;
+}
+
+h1 {
+ font-family: "Outfit", sans-serif;
+}
+
+p {
+ font-family: 'Roboto Slab', serif;
+}
+
+.hero-text-container {
+ display:flex;
+}
+
+.bio-card-container {
+ display:flex;
+}
+
+.hero-text {
+ margin: 0 1rem;
+ max-width:80ch;
+ text-align:center;
+}
+
+.bio-card {
+ max-width: 35rem;
+ background-color: var(--whte);
+ padding: 1rem;
+ margin: 1rem;
+ border-radius: 0px;
+ align-self:center;
+}
+
+.bio-card-socbar {
+ display: flex;
+ flex-wrap: wrap;
+ flex-direction: column;
+ justify-content: center;
+}
+
+.job_bigdiv {
+    width:100%;
+    display:flex;
+    justify-content: center;
+    flex-wrap:wrap;
+}
+
+.job_div {
+    min-width:60%;
+    display:block;
+    padding: 24px;
+    background-color: var(--whte);
+}
+
+.job_date {
+    padding:8px 12px;
+    border-radius:24px;
+    background-color:var(--yellow);
+    width:fit-content;
+}
+
+.job_title {
+    margin:12px 0;
+}
+
+.job_image {
+    border-radius: 18px;
+    margin:12px 0;
+}
+
+.job_div a {
+    color: var(--dblue);
+    transition-duration: 0.2s;
+}
+
+.job_div a:hover {
+    color: hsl(197, 70%, 14%);
+}
