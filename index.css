@@ -34,7 +34,12 @@
  .hero-text h1 {text-align:center;font-size:40px;}
  .taglinediv {text-align:center;font-size:14px;}
  .hero-text-container {align-items:flex-end;padding-top:4vh;}
- .job_div {margin:0 24px;}
+ .job_div {margin:0;}
+ .job_date {font-size:14px;}
+ .job_title {font-size:20px;}
+ #projects {background-color: var(--whte);}
+ .sectionheader {height:164px;}
+ .sectionheader h1 {height:30%;}
 }
 
 @media screen and (min-width:500px) {
@@ -44,6 +49,9 @@
  ul .hamburg {display:none;}
  .hero-text-container {align-items:center;}
  .job_div {margin:0 24px;}
+ #projects {background-color: var(--lblue);}
+ .sectionheader {height:200px;}
+ .sectionheader h1 {height:10%;}
 }
 
 @media screen and (min-width:750px) {
@@ -199,11 +207,19 @@ p {
  justify-content: center;
 }
 
+#projects {
+    min-height:100vh;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
 .job_bigdiv {
     width:100%;
     display:flex;
     justify-content: center;
     flex-wrap:wrap;
+    padding-bottom:68px;
 }
 
 .job_div {
