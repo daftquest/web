@@ -245,6 +245,10 @@ p {
     margin:12px 0;
 }
 
+.job_div img {
+    aspect-ratio: 1200/630;
+}
+
 .job_div a {
     color: var(--dblue);
     transition-duration: 0.2s;
