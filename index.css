@@ -32,8 +32,7 @@
  .desktop-headbar {display:none;}
  .mobile-headbar {display:flex;}
  #hero {padding:5vh 0;}
- .hero-text h1 {text-align:center;font-size:40px;}
- .taglinediv {text-align:center;font-size:14px;}
+ .hero-text {text-align:center;font-size:1.5em;}
  .hero-text-container {align-items:flex-end;padding-top:4vh;}
  .job_div {margin:0;}
  .job_date {font-size:14px;}
@@ -47,7 +46,7 @@
  .desktop-headbar {display:flex;}
  .mobile-headbar {display:none;}
  #hero {padding:10vh 0;}
- .hero-text h1 {text-align:center;font-size:36px;}
+ .hero-text h1 {text-align:center;}
  ul .hamburg {display:none;}
  .hero-text-container {align-items:center;}
  .job_div {margin:0 24px;}
@@ -58,6 +57,7 @@
 
 @media screen and (min-width:750px) {
  .job_div {max-width:80ch;}
+ .hero-text {font-size:24px;}
 }
 
 @media only screen and (max-device-width:1366px) {
@@ -67,28 +67,28 @@
 
 @media only screen and (min-device-width:1367px) {
  #hero {background-attachment:fixed;}
- .hero-text h1 {text-align:center;font-size:48px;}
+ .hero-text {text-align:center;font-size:28px;}
  .bio-card {max-height: 50rem;}
 }
 
 @media screen and (min-width: 1200px) {
- .hero-text h1 {font-size: 72px;}
+ .hero-text {font-size: 36px;}
 }
 
 @media screen and (min-width: 1600px) {
- .hero-text h1 {font-size: 84px;}
+ .hero-text {font-size: 48px;}
 }
 
 @media screen and (min-width: 2000px) {
- .hero-text h1 {font-size: 96px;}
+ .hero-text {font-size: 60px;}
 }
 
 @media screen and (min-width: 2400px) {
- .hero-text h1 {font-size: 108px;}
+ .hero-text {font-size: 72px;}
 }
 
 @media screen and (min-width: 2800px) {
- .hero-text h1 {font-size: 120px;}
+ .hero-text {font-size: 84px;}
 }
 
 html {
@@ -227,7 +227,7 @@ p {
 .job_div {
     min-width:60%;
     display:block;
-    padding: 24px;
+    padding: 1em;
     background-color: var(--whte);
 }
 
