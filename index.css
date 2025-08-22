@@ -31,6 +31,7 @@
 @media screen and (max-width:499px) {
  .desktop-headbar {display:none;}
  .mobile-headbar {display:flex;}
+ #hero {padding:5vh 0;}
  .hero-text h1 {text-align:center;font-size:40px;}
  .taglinediv {text-align:center;font-size:14px;}
  .hero-text-container {align-items:flex-end;padding-top:4vh;}
@@ -45,7 +46,8 @@
 @media screen and (min-width:500px) {
  .desktop-headbar {display:flex;}
  .mobile-headbar {display:none;}
- .hero-text h1 {text-align:center;font-size:40px;}
+ #hero {padding:10vh 0;}
+ .hero-text h1 {text-align:center;font-size:36px;}
  ul .hamburg {display:none;}
  .hero-text-container {align-items:center;}
  .job_div {margin:0 24px;}
