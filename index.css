@@ -31,7 +31,7 @@
 @media screen and (max-width:499px) {
  .desktop-headbar {display:none;}
  .mobile-headbar {display:flex;}
- #hero {padding:5vh 0;}
+ #hero {padding:5vh 0 10vh 0;}
  .hero-text {text-align:center;font-size:1.5em;}
  .hero-text-container {align-items:flex-end;padding-top:4vh;}
  .job_div {margin:0;}
