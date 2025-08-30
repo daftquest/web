@@ -179,6 +179,12 @@ p {
  font-family: 'Roboto Slab', serif;
 }
 
+#hero {
+    background-image: url(space.webp);
+    background-position: center;
+    background-size: cover;
+}
+
 .hero-text-container {
  display:flex;
 }
