@@ -1,8 +1,13 @@
 .project video, .project img {
  border-radius: 1rem;
- max-width: 100%;
+ width: auto;
  height: 100%;
- object-fit:cover;
+ display: block;
+}
+
+.project {
+ flex; 1;
+ padding: 1rem;
 }
 
 .proj_row {
@@ -10,8 +15,9 @@
  flex-wrap:nowrap;
  gap:1rem;
  justify-content: center;
- max-height: 65vh;
- max-width: 65vw;
+ height: 45vh;
+ width: 80vw;
+ margin: 0 auto;
 }
 
 .proj_collection {

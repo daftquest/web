@@ -106,6 +106,7 @@ html::-webkit-scrollbar {
  top: 0;
  width: 100%;
  min-height: 80px;
+ z-index: 9999;
 }
 
 .mobile-headbar {
