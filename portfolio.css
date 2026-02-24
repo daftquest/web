@@ -1,29 +1,20 @@
-.project video, .project img {
- border-radius: 1rem;
- width: auto;
- height: 100%;
- display: block;
+section div img, section div video {
+    height: max(200px, 25vw);
+    width: auto;
+    object-fit:cover;
+    opacity: 1;
+    transition: 0.2s ease;
+    border-radius: 1rem;
 }
 
-.project {
- flex; 1;
- padding: 1rem;
+section div img:hover, section div video:hover {
+    opacity: 0.4;
 }
 
-.proj_row {
- display:flex;
- flex-wrap:nowrap;
- gap:1rem;
- justify-content: center;
- height: 45vh;
- width: 80vw;
- margin: 0 auto;
+@media screen and (max-width:499px) {
+    section div img, section div video {height:50vw;}
 }
 
-.proj_collection {
- display:flex;
- justify-content:center;
- flex-wrap:wrap;
- gap:1rem;
- width: 100%;
+@media screen and (min-width:500px) {
+    section div img, section div video {height:25vw;}
 }
