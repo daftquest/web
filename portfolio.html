@@ -85,51 +85,51 @@
   </div>
   <div id="hero">
    <div class="hero-text">
-    <h1 style="color:white;text-align:center;font-size:3em;">Portfolio</h1>
+    <h1 style="color:var(--whte);text-align:center;font-size:3em;">Portfolio</h1>
    </div>
   </div>
   <section id="page-design" style="display:none;">
   </section>
-  <section id="web-dev" style="background-image:linear-gradient(to bottom, var(--blck), var(--dblue));">
+  <section id="web-dev" style="background-image:linear-gradient(to bottom, var(--blck), var(--lblue));">
     <div>
-      <h2 style="color:white;justify-self:center;text-align:center;align-self:center;padding:1rem;">Website Development</h2>
+      <h2 style="color:var(--blck);justify-self:center;text-align:center;align-self:center;padding:1rem;">Website Development</h2>
     </div>
   </section>
   <section id="brand-design">
     <div>
-      <h2 style="color:var(--blck);justify-self:center;text-align:center;align-self:center;width:100%;">Brand Design</h2>
+      <h2 style="color:var(--blck);justify-self:center;text-align:center;align-self:center;width:100%;padding:1rem;">Brand Design</h2>
     </div>
     <div class="content-row">
       <div class="itsy-grid">
-        <div style="grid-area:itsy-1;aspect-ratio:2250/1012;">
+        <div style="grid-area:itsy-1;aspect-ratio:2250/1012;width:100%;max-height:100%;">
           <picture>
             <img src="pf-images/itsyspoofyheader2.png" loading="lazy" width="2250" height="1012"
               alt="General-purpose banner image designed by Brian Dyer for the band Itsy Bitsy, attached to a color palette.">
           </picture>
         </div>
-        <div style="grid-area:itsy-2;aspect-ratio:1/1;">
+        <div style="grid-area:itsy-2;aspect-ratio:1/1;max-width:100%;max-height:100%;">
           <video src="pf-images/playlists.mp4" loop preload="auto" width="1080" height="1080" autoplay muted
-            style="cursor:auto;display:block;background-color:black;object-position:50% 50%;"></video>
+            style="cursor:auto;display:block;object-position:50% 50%;object-fit:cover;"></video>
         </div>
-        <div style="grid-area:itsy-3;aspect-ratio:16/9;">
+        <div style="grid-area:itsy-3;aspect-ratio:16/9;max-width:100%;max-height:100%;">
           <video src="pf-images/thumbnails.mp4" loop preload="auto" width="1920" height="1080" autoplay muted
-            style="cursor:auto;display:block;background-color:black;object-position:50% 50%;"></video>
+            style="cursor:auto;display:block;object-position:50% 50%;object-fit:cover;"></video>
         </div>
-      </div>
-      <div style="display:flex;flex-direction:column;gap:0.833333vw;padding:0.833333vw;padding-left:0.4151515vw;width:50%;">
-        <div style="justify-content:center;display:flex;">
-          <img src="pf-images/itsyLogo.svg" style="justify-self:center;width:25vw;">
-        </div>
-        <div style="background-color:var(--whte);border-radius:0.833333vw;display:flex;justify-content:center;align-items:center;padding:0.833333vw;">
-          <p style="width:100%;font-size:16px;">For Itsy Bitsy, an independent rock band based in Boise, I created a vibrant and colorful five-color palette to match the band's sound. I designed Spotify
-            playlist covers, a live show thumbnail template, as well as other miscellaneous promotional art for social media profiles. <br><br><i>Note: I did not create the logo.</i></p>
+        <div style="grid-area:itsy-4;">
+          <div class="brand-logo" style="justify-content:center;display:flex;justify-self:center;width:20vw;">
+            <img src="pf-images/itsyLogo.svg" style="justify-self:center;">
+          </div>
+          <p style="margin-top:1rem;">For <b>Itsy Bitsy</b>, an independent rock band based in Boise, I created a vibrant and
+            colorful five-color palette to match the band's sound.<br><br>I designed Spotify
+            playlist covers, a live show thumbnail template, as well as other miscellaneous promotional art for music and social media
+            profiles. <br><br><i>Note: I did not create the logo.</i></p>
         </div>
       </div>
     </div>
   </section>
-  <section id="misc" style="background-image: linear-gradient(to bottom, var(--dblue), var(--blck));">
+  <section id="misc" style="background-image: linear-gradient(to bottom, var(--lblue), var(--blck));">
     <div>
-      <h2 style="color:white;justify-self:center;text-align:center;align-self:center;padding:1rem;">Miscellaneous</h2>
+      <h2 style="color:var(--blck);justify-self:center;text-align:center;align-self:center;padding:1rem;">Miscellaneous</h2>
     </div>
   </section>
   <footer style="background-color:var(--blck);width:100%;min-height:100px;margin:0;display:flex;justify-content:center;align-items:center;padding:1.5rem 0;">
