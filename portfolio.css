@@ -48,7 +48,7 @@ section {
 
 @media screen and (max-width:729px) {
     h2 {font-size:8vw;padding:1rem;}
-    p {font-size:16px;}
+    p {font-size:4vw;}
     #brand-design .itsy-grid {
         grid-template-areas:
             "itsy-4 itsy-4"
@@ -57,8 +57,9 @@ section {
     }
     .itsy-grid {grid-template-columns: 36fr 64fr;
     grid-template-rows: auto auto auto;width:100%;gap:0.5rem;padding:1rem;}
-    .itsy-grid img, .itsy-grid video {border-radius:1rem;}
-    .brand-logo {min-width:50vw;}
+    .itsy-grid img, .itsy-grid video {border-radius:1rem;height:100%;}
+    .brand-logo {width:100%;}
+    .brand-logo img {width:50%;}
     .content-row {width:100%;}
 }
 
@@ -73,7 +74,8 @@ section {
     .itsy-grid {grid-template-columns: 26.470588235fr 47.058823529fr 26.470588235fr;
     grid-template-rows: auto auto;width:75%;gap:0.833333vw;padding:0.833333vw;width:60%;aspect-ratio:1132.8/691.56;}
     .itsy-grid img, .itsy-grid video {border-radius:0.833333vw;}
-    .brand-logo {filter: drop-shadow(2px 6px 6px var(--blck));}
+    .brand-logo {width:20vw;}
+    .brand-logo img {filter: drop-shadow(2px 6px 6px var(--blck));position:relative;right:15%;}
     .content-row {width:100%;}
 }
 
