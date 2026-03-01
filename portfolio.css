@@ -75,7 +75,7 @@ section {
     grid-template-rows: auto auto;width:75%;gap:0.833333vw;padding:0.833333vw;width:60%;aspect-ratio:1132.8/691.56;}
     .itsy-grid img, .itsy-grid video {border-radius:0.833333vw;}
     .brand-logo {width:20vw;}
-    .brand-logo img {filter: drop-shadow(2px 6px 6px var(--blck));position:relative;right:15%;}
+    .brand-logo img {filter: drop-shadow(2px 6px 6px var(--blck));}
     .content-row {width:100%;}
 }
 
