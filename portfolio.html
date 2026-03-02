@@ -4,7 +4,7 @@
  <head>
   <title>Brian Dyer</title>
   <link rel="canonical" href="https://briandyer.com/portfolio">
-  <meta name="description" content="Brian Dyer is a web developer driven to creating first impressions that work. He's currently studying Computer Science and Electrical Engineering at Boise State University.">
+  <meta name="description" content="Brian Dyer is a web developer driven to creating first impressions that work. He's currently studying Computer Science at Boise State University.">
   <link rel="stylesheet" href="nav.css">
   <link rel="stylesheet" href="portfolio.css">
   <link rel="preload" fetchpriority="high" as="image" href="space.webp" type="image/webp">
@@ -16,8 +16,8 @@
   <meta property="og:url" content="https://briandyer.com/portfolio">
   <meta property="og:type" content="website">
   <meta property="og:image" content="briandyer.com_og.png">
-  <meta property="og:title" content="Brian Dyer">
-  <meta property="og:description" content="Brian Dyer is a web developer driven to creating first impressions that work. He's currently studying Computer Science and Electrical Engineering at Boise State University.">
+  <meta property="og:title" content="Portfolio | Brian Dyer">
+  <meta property="og:description" content="Brian Dyer is a web developer driven to creating first impressions that work. He's currently studying Computer Science at Boise State University.">
 
   <meta name="twitter:card" content="summary_large_image">
   <meta property="twitter:domain" content="briandyer.com">
@@ -90,14 +90,35 @@
   </div>
   <section id="page-design" style="display:none;">
   </section>
-  <section id="web-dev" style="background-image:linear-gradient(to bottom, var(--blck), var(--lblue));">
-    <div>
-      <h2 style="color:var(--blck);justify-self:center;text-align:center;align-self:center;padding:1rem;">Website Development</h2>
+  <section id="web-dev" style="background-color:var(--lblue);">
+    <div style="margin-bottom:1rem;">
+      <h2 style="color:var(--blck);justify-self:center;text-align:center;align-self:center;padding-top:1rem;">Accomplishments</h2>
+      <p style="color:var(--blck);justify-self:center;text-align:center;align-self:center;padding-bottom:1rem;">Programming & Design Hurdles</p>
+    </div>
+    <div class="content-row" style="min-height:20vh;">
+      <div class="release-grid" style="display:grid;background-color:var(--whte);gap:1rem;padding:1rem;height:100%;">
+        <div style="grid-area:release-1;">
+          <h3 style="text-align:center;margin-bottom:1rem;">Automating the Arduous</h3>
+          <p>
+            While working on an update for daughterlotus.com, a static site with no back-end, I wanted a way to automate
+            making pages for each of his albums, EPs, and singles.<br><br>
+            To approach the problem, I learned more about JSON and developed an efficient template site that is filled with
+            release-specific information, and even includes custom color palettes.<br><br>
+            Now whenever Daughter Lotus plans on releasing new music, the release page can be available much earlier than day one!
+            You can explore some of these pages by <a href="https://daughterlotus.com/music" style="font-weight:bold;">clicking here</a>.
+          </p>
+        </div>
+        <div style="grid-area:release-2;object-fit:cover;aspect-ratio:1370/1080;height:100%;width:100%;">
+          <video src="pf-images/releasePages.mp4" loop preload="auto" width="1370" height="1080" autoplay muted playsinline
+            webkit-playsinline style="cursor:auto;display:block;object-position:50% 50%;width:100%;height:100%;"></video>
+        </div>
+      </div>
     </div>
   </section>
   <section id="brand-design">
-    <div>
-      <h2 style="color:var(--blck);justify-self:center;text-align:center;align-self:center;width:100%;padding:1rem;">Brand Design</h2>
+    <div style="margin-bottom:1rem;">
+      <h2 style="color:var(--blck);justify-self:center;text-align:center;align-self:center;padding-top:1rem;">Brand Design</h2>
+      <p style="color:var(--blck);justify-self:center;text-align:center;align-self:center;padding-bottom:1rem;">Building Visually-Distinct Identities</p>
     </div>
     <div class="content-row">
       <div class="itsy-grid">
@@ -121,15 +142,28 @@
           </div>
           <p style="margin-top:1rem;">For <b>Itsy Bitsy</b>, an independent rock band based in Boise, I created a vibrant and
             colorful five-color palette to match the band's sound.<br><br>I designed Spotify
-            playlist covers, a live show thumbnail template, as well as other miscellaneous promotional art for music and social media
+            playlist covers, a live show thumbnail template, as well as other miscellaneous promotional art for other online
             profiles. <br><br><i>Note: I did not create the logo.</i></p>
         </div>
       </div>
     </div>
   </section>
-  <section id="misc" style="background-image: linear-gradient(to bottom, var(--lblue), var(--blck));">
+  <section id="misc" style="display:none;background-image: linear-gradient(to bottom, var(--lblue), var(--blck));">
     <div>
       <h2 style="color:var(--blck);justify-self:center;text-align:center;align-self:center;padding:1rem;">Miscellaneous</h2>
+    </div>
+    <div class="content-row" style="height:50vh;flex-wrap:nowrap;">
+      <div style="height:100%;">
+        <figure style="aspect-ratio:3300/4096;height:100%;">
+          <img src="pf-images/RealmsPoster.jpg" width="3300" height="4096" style="width:100%;height:100%;">
+          <figcaption>Poster I designed for a concert at Realms Arcade based on <a href="https://www.criterion.com/films/314-dazed-and-confused">Marc English's Criterion cover for <i>Dazed and Confused</i></a></figcaption>
+        </figure>
+      </div>
+      <div style="aspect-ratio:4151/5782;height:100%;">
+        <figure>
+          <img src="pf-images/goTeamHomage.JPEG" width="4151" height="5782" style="width:100%;height:100%;">
+        </figure>
+      </div>
     </div>
   </section>
   <footer style="background-color:var(--blck);width:100%;min-height:100px;margin:0;display:flex;justify-content:center;align-items:center;padding:1.5rem 0;">

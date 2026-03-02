@@ -20,6 +20,22 @@ section {
     background-color: var(--lblue);
 }
 
+figure {
+    figcaption {display:inline;opacity:0;transition:0.2s;}
+    img {opacity:1;transition: 0.2s;}
+}
+
+figure:hover {
+    figcaption {opacity:1;}
+    img {opacity:0.5;}
+}
+
+figcaption {
+    color: var(--whte);
+    text-align: center;
+    position: relative;
+}
+
 .itsy-grid img, .itsy-grid video {
     object-fit:cover;
     width: 100%;
@@ -46,9 +62,20 @@ section {
     "itsy-2 itsy-3 itsy-4";
 }
 
+#misc img {
+    height:100%;
+}
+
 @media screen and (max-width:729px) {
     h2 {font-size:8vw;padding:1rem;}
+    h3 {font-size:6vw;padding:1rem;}
     p {font-size:4vw;}
+    #web-dev .release-grid {
+    grid-template-areas:
+        "release-1"
+        "release-2";
+    }
+    .release-grid {grid-template-rows:auto auto;width:100%;}
     #brand-design .itsy-grid {
         grid-template-areas:
             "itsy-4 itsy-4"
@@ -57,7 +84,7 @@ section {
     }
     .itsy-grid {grid-template-columns: 36fr 64fr;
     grid-template-rows: auto auto auto;width:100%;gap:0.5rem;padding:1rem;}
-    .itsy-grid img, .itsy-grid video {border-radius:1rem;height:100%;}
+    .itsy-grid img, .itsy-grid video, .release-grid img, .release-grid video {border-radius:1rem;height:100%;}
     .brand-logo {width:100%;}
     .brand-logo img {width:50%;}
     .content-row {width:100%;}
@@ -65,7 +92,13 @@ section {
 
 @media screen and (min-width:730px) {
     h2 {font-size:4vw;padding:0.833333vw;}
-    p {font-size:0.9vw;}
+    h3 {font-size:1.25vw;padding:0.833333vw;}
+    p {font-size:1vw;}
+    #web-dev .release-grid {
+    grid-template-areas:
+        "release-1 release-2";
+    }
+    .release-grid {grid-template-columns:1fr 2fr;width:60%;}
     #brand-design .itsy-grid {
         grid-template-areas:
             "itsy-1 itsy-1 itsy-4"
@@ -73,7 +106,7 @@ section {
     }
     .itsy-grid {grid-template-columns: 26.470588235fr 47.058823529fr 26.470588235fr;
     grid-template-rows: auto auto;width:75%;gap:0.833333vw;padding:0.833333vw;width:60%;aspect-ratio:1132.8/691.56;}
-    .itsy-grid img, .itsy-grid video {border-radius:0.833333vw;}
+    .itsy-grid img, .itsy-grid video, .release-grid img, .release-grid video {border-radius:0.833333vw;}
     .brand-logo {width:20vw;}
     .brand-logo img {filter: drop-shadow(2px 6px 6px var(--blck));}
     .content-row {width:100%;}

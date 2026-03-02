@@ -129,6 +129,16 @@ html::-webkit-scrollbar {
  font-size: 16px;
 }
 
+a {
+    color:var(--dblue);
+    transition-duration: 0.15s;
+    text-decoration: none;
+}
+
+a:hover {
+    color:rgb(11, 47, 61);
+}
+
 li a {
  color: var(--whte);
  transition-duration: 0.15s;
