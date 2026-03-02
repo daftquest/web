@@ -12,10 +12,6 @@
     gap: 1rem;
 }
 
-section {
-    padding: 1rem;
-}
-
 #brand-design {
     background-color: var(--lblue);
 }
@@ -66,15 +62,24 @@ figcaption {
     height:100%;
 }
 
+.acc_date {
+    padding:8px 12px;
+    border-radius:24px;
+    background-color:var(--yellow);
+    width:fit-content;
+}
+
 @media screen and (max-width:729px) {
-    h2 {font-size:8vw;padding:1rem;}
-    h3 {font-size:6vw;padding:1rem;}
-    p {font-size:4vw;}
-    #web-dev .release-grid {
+    h2 {font-size:2em;padding:1rem;}
+    h3 {font-size:5vw;padding:1rem 0;}
+    p {font-size:3.8647342995169vw;}
+    section {padding:0;}
+    #accomplishments .release-grid {
     grid-template-areas:
         "release-1"
         "release-2";
     }
+    .acc_date {font-size:3.3816425120773vw;}
     .release-grid {grid-template-rows:auto auto;width:100%;}
     #brand-design .itsy-grid {
         grid-template-areas:
@@ -92,9 +97,10 @@ figcaption {
 
 @media screen and (min-width:730px) {
     h2 {font-size:4vw;padding:0.833333vw;}
-    h3 {font-size:1.25vw;padding:0.833333vw;}
-    p {font-size:1vw;}
-    #web-dev .release-grid {
+    h3 {font-size:1.15vw;padding:0.833333vw 0;}
+    p {font-size:0.9vw;}
+    section {padding:1rem;}
+    #accomplishments .release-grid {
     grid-template-areas:
         "release-1 release-2";
     }
