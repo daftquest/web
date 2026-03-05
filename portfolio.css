@@ -98,20 +98,20 @@ figcaption {
 @media screen and (min-width:730px) {
     h2 {font-size:4vw;padding:0.833333vw;}
     h3 {font-size:1.15vw;padding:0.833333vw 0;}
-    p {font-size:0.9vw;}
+    p {font-size:1vw;}
     section {padding:1rem;}
     #accomplishments .release-grid {
     grid-template-areas:
         "release-1 release-2";
     }
-    .release-grid {grid-template-columns:1fr 2fr;width:60%;}
+    .release-grid {grid-template-columns:1fr 2fr;width:65%;}
     #brand-design .itsy-grid {
         grid-template-areas:
             "itsy-1 itsy-1 itsy-4"
             "itsy-2 itsy-3 itsy-4";
     }
     .itsy-grid {grid-template-columns: 26.470588235fr 47.058823529fr 26.470588235fr;
-    grid-template-rows: auto auto;width:75%;gap:0.833333vw;padding:0.833333vw;width:60%;aspect-ratio:1132.8/691.56;}
+    grid-template-rows: auto auto;width:75%;gap:0.833333vw;padding:0.833333vw;width:65%;aspect-ratio:1132.8/691.56;}
     .itsy-grid img, .itsy-grid video, .release-grid img, .release-grid video {border-radius:0.833333vw;}
     .brand-logo {width:20vw;}
     .brand-logo img {filter: drop-shadow(2px 6px 6px var(--blck));}
