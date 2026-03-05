@@ -63,7 +63,7 @@ figcaption {
 }
 
 .acc_date {
-    padding:1rem;
+    padding:8px 12px;
     border-radius:24px;
     background-color:var(--yellow);
     width:fit-content;
@@ -73,6 +73,7 @@ figcaption {
     h2 {font-size:2em;padding:1rem;}
     h3 {font-size:5vw;padding:1rem 0;}
     p {font-size:3.8647342995169vw;}
+    .acc_date {font-size:2vw;}
     section {padding:0;}
     #accomplishments .release-grid {
     grid-template-areas:
@@ -99,6 +100,7 @@ figcaption {
     h2 {font-size:4vw;padding:0.833333vw;}
     h3 {font-size:1.15vw;padding:0.833333vw 0;}
     p {font-size:1vw;}
+    .acc_date {font-size:1vw;}
     section {padding:1rem;}
     #accomplishments .release-grid {
     grid-template-areas:
