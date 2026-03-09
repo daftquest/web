@@ -105,13 +105,16 @@ html::-webkit-scrollbar {
     display: none; /* Chrome and the rest */
 }
 
+header {
+    position: sticky;
+    width: 100%;
+    top: 0;
+}
+
 .desktop-headbar {
  background-color: var(--blck);
  align-items:center;
  justify-content:space-between;
- position: sticky;
- top: 0;
- width: 100%;
  min-height: 80px;
 }
 
@@ -119,9 +122,6 @@ html::-webkit-scrollbar {
  background-color: var(--blck);
  align-items:center;
  justify-content:space-between;
- position: sticky;
- top: 0;
- width: 100%;
  min-height: 80px;
 }
 
@@ -300,6 +300,8 @@ p {
 .job_image {
     border-radius: 18px;
     margin:12px 0;
+    width: 100%;
+    height: auto;
 }
 
 .job_div img {

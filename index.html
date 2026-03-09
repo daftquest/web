@@ -54,37 +54,40 @@
 
  </head>
  <body>
-  <div class="desktop-headbar">
-   <p style="margin:1rem;font-size:2em;">
-    <a style="text-decoration:none;color:var(--whte);font-family:Outfit;font-weight:bold;" href="#">Brian Dyer</a>
-   </p>
-   <nav id="navbar">
-    <ul style="display:flex;flex-direction:row;list-style-type:none;align-items:center;">
-     <li class="navlink"><a href="./portfolio">Portfolio</a></li>
-     <li class="navlink"><a class="rbutton" href="briandyer_resume.pdf" download="Resume - Brian Dyer.pdf" target="_blank"><svg xmlns="https://www.w3.org/2000/svg" width="18" height="18" fill="var(--token-b39bb347-f967-4b0b-bad9-1dfc8362147d, rgb(0, 0, 0))" viewBox="0 0 256 256" style="order: 0; flex-shrink: 0;"><path d="M228 152v56a20 20 0 0 1-20 20H48a20 20 0 0 1-20-20v-56a12 12 0 0 1 24 0v52h152v-52a12 12 0 0 1 24 0Zm-108.49 8.49a12 12 0 0 0 17 0l40-40a12 12 0 0 0-17-17L140 123V40a12 12 0 0 0-24 0v83l-19.51-19.49a12 12 0 0 0-17 17Z"></path></svg>Résumé</a></li>
-    </ul>
-   </nav>
-  </div>
-  <div class="mobile-headbar">
-   <nav id="navbar">
-    <a style="display:flex;align-items:center;justify-content:center;margin:1rem;" id="InMenuButton">
-     <img src="hamburg.webp" width="24" height="24" style="border-radius:2px;" alt="Menu symbol, three short horizontal lines stacked on top of each other.">
-    </a>
+  <header>
+   <div class="desktop-headbar" role="navigation">
     <p style="margin:1rem;font-size:2em;">
      <a style="text-decoration:none;color:var(--whte);font-family:Outfit;font-weight:bold;" href="#">Brian Dyer</a>
     </p>
-   </nav>
-    <div id="screen-mobile-nav" style="display:none;">
-     <a id="MenuButton" style="float:left;display:flex;align-items:center;justify-content:center;padding:28px 1rem;">
-      <img src="hamburg.webp" style="border-radius:2px;" alt="Mobile menu icon" aria-label="Click to view the list of pages on briandyer.com." width="24" height="24">
-     </a>
-     <ul style="display:flex;width:100%;list-style-type:none;flex-wrap:wrap;justify-content:center;gap:2em;">
-      <li style="display:flex;font-size:1.75rem;width:100%;justify-content:center;"><a href="./portfolio" style="text-decoration:none;">Portfolio</a></li>
-      <li><a class="rbutton" href="briandyer_resume.pdf" download="Resume - Brian Dyer.pdf" target="_blank" style="font-size:1.75em;text-decoration:none;display:flex;align-items:center;color:var(--blck);padding:1.125rem;border-radius:36px;"><svg xmlns="https://www.w3.org/2000/svg" width="27" height="27" fill="var(--token-b39bb347-f967-4b0b-bad9-1dfc8362147d, rgb(0, 0, 0))" viewBox="0 0 256 256" style="order: 0; flex-shrink: 0;"><path d="M228 152v56a20 20 0 0 1-20 20H48a20 20 0 0 1-20-20v-56a12 12 0 0 1 24 0v52h152v-52a12 12 0 0 1 24 0Zm-108.49 8.49a12 12 0 0 0 17 0l40-40a12 12 0 0 0-17-17L140 123V40a12 12 0 0 0-24 0v83l-19.51-19.49a12 12 0 0 0-17 17Z"></path></svg>Résumé</a></li>
+    <nav id="navbar">
+     <ul style="display:flex;flex-direction:row;list-style-type:none;align-items:center;">
+      <li class="navlink"><a href="./portfolio">Portfolio</a></li>
+      <li class="navlink"><a class="rbutton" href="briandyer_resume.pdf" download="Resume - Brian Dyer.pdf" target="_blank"><svg xmlns="https://www.w3.org/2000/svg" width="18" height="18" fill="var(--token-b39bb347-f967-4b0b-bad9-1dfc8362147d, rgb(0, 0, 0))" viewBox="0 0 256 256" style="order: 0; flex-shrink: 0;"><path d="M228 152v56a20 20 0 0 1-20 20H48a20 20 0 0 1-20-20v-56a12 12 0 0 1 24 0v52h152v-52a12 12 0 0 1 24 0Zm-108.49 8.49a12 12 0 0 0 17 0l40-40a12 12 0 0 0-17-17L140 123V40a12 12 0 0 0-24 0v83l-19.51-19.49a12 12 0 0 0-17 17Z"></path></svg>Résumé</a></li>
      </ul>
-    </div>
-  </div>
-  <section id="hero">
+    </nav>
+   </div>
+   <div class="mobile-headbar" role="navigation">
+    <nav id="navbar">
+     <a style="display:flex;align-items:center;justify-content:center;margin:1rem;" id="InMenuButton">
+      <img src="hamburg.webp" width="24" height="24" style="border-radius:2px;" alt="Menu symbol, three short horizontal lines stacked on top of each other.">
+     </a>
+     <p style="margin:1rem;font-size:2em;">
+      <a style="text-decoration:none;color:var(--whte);font-family:Outfit;font-weight:bold;" href="#">Brian Dyer</a>
+     </p>
+    </nav>
+     <div id="screen-mobile-nav" style="display:none;">
+      <a id="MenuButton" style="float:left;display:flex;align-items:center;justify-content:center;padding:28px 1rem;">
+       <img src="hamburg.webp" style="border-radius:2px;" alt="Mobile menu icon" aria-label="Click to view the list of pages on briandyer.com." width="24" height="24">
+      </a>
+      <ul style="display:flex;width:100%;list-style-type:none;flex-wrap:wrap;justify-content:center;gap:2em;">
+       <li style="display:flex;font-size:1.75rem;width:100%;justify-content:center;"><a href="./portfolio" style="text-decoration:none;">Portfolio</a></li>
+       <li><a class="rbutton" href="briandyer_resume.pdf" download="Resume - Brian Dyer.pdf" target="_blank" style="font-size:1.75em;text-decoration:none;display:flex;align-items:center;color:var(--blck);padding:1.125rem;border-radius:36px;"><svg xmlns="https://www.w3.org/2000/svg" width="27" height="27" fill="var(--token-b39bb347-f967-4b0b-bad9-1dfc8362147d, rgb(0, 0, 0))" viewBox="0 0 256 256" style="order: 0; flex-shrink: 0;"><path d="M228 152v56a20 20 0 0 1-20 20H48a20 20 0 0 1-20-20v-56a12 12 0 0 1 24 0v52h152v-52a12 12 0 0 1 24 0Zm-108.49 8.49a12 12 0 0 0 17 0l40-40a12 12 0 0 0-17-17L140 123V40a12 12 0 0 0-24 0v83l-19.51-19.49a12 12 0 0 0-17 17Z"></path></svg>Résumé</a></li>
+      </ul>
+     </div>
+   </div>
+  </header>
+  <main>
+  <section id="hero" role="banner">
    <div class="hero-text-container">
     <div class="hero-text">
      <h1>Hi, I'm Brian:</h1>
@@ -94,7 +97,7 @@
    <div class="bio-card-container">
     <div class="bio-card">
      <picture>
-      <img src="IMG_2809.webp" width="919" height="919" alt="portrait of Brian Dyer, softly smiling towards the camera.">
+      <img src="IMG_2809.webp" width="919" height="919" alt="portrait of Brian Dyer, softly smiling towards the camera." loading="eager" fetchpriority="high">
      </picture>
      <div class="bio-card-bottom">
       <p><span>Brian Dyer</span><br>thisisbriand@gmail.com</p>
@@ -122,7 +125,7 @@
        <source media="(max-width:1000px)" srcset="responsive/daughterlotus-1000w.webp">
        <source media="(max-width:1200px)" srcset="responsive/daughterlotus-1200w.webp">
        <source media="(max-width:1600px)" srcset="responsive/daughterlotus-1600w.webp">
-       <img src="daughterlotus.webp" class="job_image" style="width:100%;height:auto;" width="1919" height="1079" alt="Screenshot of Daughter Lotus's website, daughterlotus.com, taken on August 22nd, 2025.">
+       <img src="daughterlotus.webp" class="job_image" width="1919" height="1079" alt="Screenshot of Daughter Lotus's website, daughterlotus.com, taken on August 22nd, 2025.">
       </picture>
     </div>
     <div class="job_div">
@@ -135,7 +138,7 @@
        <source media="(max-width:1000px)" srcset="responsive/itsybitsy-1000w.webp">
        <source media="(max-width:1200px)" srcset="responsive/itsybitsy-1200w.webp">
        <source media="(max-width:1600px)" srcset="responsive/itsybitsy-1600w.webp">
-        <img src="itsybitsy.webp" class="job_image" style="width:100%;height:auto;" width="1919" height="1079" alt="Screenshot of Itsy Bitsy's website, itsybitsyband.com, taken on August 22nd, 2025.">
+        <img src="itsybitsy.webp" class="job_image" width="1919" height="1079" alt="Screenshot of Itsy Bitsy's website, itsybitsyband.com, taken on August 22nd, 2025.">
       </picture>
     </div>
     <div class="job_div">
@@ -148,12 +151,13 @@
        <source media="(max-width:1000px)" srcset="responsive/thefjordpeople-1000w.webp">
        <source media="(max-width:1200px)" srcset="responsive/thefjordpeople-1200w.webp">
        <source media="(max-width:1600px)" srcset="responsive/thefjordpeople-1600w.webp">
-        <img src="thefjordpeople.webp" class="job_image" style="width:100%;height:auto;" width="1919" height="1079" alt="Screenshot of The Fjord People's website, thefjordpeople.com, taken on August 22nd, 2025.">
+        <img src="thefjordpeople.webp" class="job_image" width="1919" height="1079" alt="Screenshot of The Fjord People's website, thefjordpeople.com, taken on August 22nd, 2025.">
       </picture>
     </div>
     </div>
   </section>
-  <footer class="footer">
+  </main>
+  <footer>
    <div>
     <p>©2026 Brian Dyer.<br><br>Last update: March 3rd, 2026.</p>
    </div>

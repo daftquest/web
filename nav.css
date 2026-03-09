@@ -143,7 +143,7 @@ p {
  font-family: 'Roboto Slab', serif;
 }
 
-.footer {
+footer {
     background-color: var(--blck);
     width: 100%;
     min-height: 100px;
