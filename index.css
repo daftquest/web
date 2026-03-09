@@ -38,8 +38,8 @@
  .job_date {font-size:14px;}
  .job_title {font-size:20px;}
  #projects {background-color: var(--whte);}
- .sectionheader {height:164px;}
- .sectionheader h1 {height:30%;}
+ .section_header {height:164px;}
+ .section_header h2 {height:30%;}
 }
 
 @media screen and (min-width:500px) {
@@ -50,9 +50,10 @@
  ul .hamburg {display:none;}
  .hero-text-container {align-items:center;}
  .job_div {margin:0 24px;}
+ .job_title {font-size:2em;}
  #projects {background-color: var(--lblue);}
- .sectionheader {height:200px;}
- .sectionheader h1 {height:10%;}
+ .section_header {height:200px;}
+ .section_header h2 {height:10%;}
 }
 
 @media screen and (min-width:750px) {
@@ -143,18 +144,6 @@ li a:hover {
  color: var(--lblue);
 }
 
-.rbutton {
- background-color: var(--lblue);
- transition-duration: 0.15s;
- border-radius:24px;
- padding:.75rem;
- font-family:Outfit;
-}
-
-.navlink .rbutton:hover {
- background-color: var(--whte);
-}
-
 .hamburg {
  max-height: 32px;
  width: auto;
@@ -183,6 +172,10 @@ p {
     background-image: url(space.webp);
     background-position: center;
     background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    column-count: 2;
+    justify-items: center;
 }
 
 .hero-text-container {
@@ -197,6 +190,15 @@ p {
  margin: 0 1rem;
  max-width:80ch;
  text-align:center;
+ color: var(--whte);
+
+ h1 {
+    font-size: 2em;
+ }
+
+ p {
+    font-size: 0.5em;
+ }
 }
 
 .bio-card {
@@ -206,6 +208,29 @@ p {
  margin: 1rem;
  border-radius: 0px;
  align-self:center;
+
+ img {
+    width:100%;
+    height:auto;
+    border-radius:24px;
+ }
+}
+
+.bio-card-bottom {
+    margin-top:1rem;
+    display:flex;
+    justify-content:space-between;
+
+    p {
+        font-size:1em;
+        text-align:left;
+        color:var(--blck);
+    }
+
+    span {
+        font-weight: bold;
+        font-size: 1.5em;
+    }
 }
 
 .bio-card-socbar {
@@ -213,6 +238,30 @@ p {
  flex-wrap: wrap;
  flex-direction: column;
  justify-content: center;
+ text-align:right;
+ list-style-type:none;
+
+ img {
+    height:24px;width:auto;border-radius:3px;
+ }
+}
+
+.section_header {
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+
+    h2 {
+        font-size:4em;
+        width:100%;
+    }
+
+    p {
+        font-size:1em;
+        width: 100%;
+    }
 }
 
 #projects {

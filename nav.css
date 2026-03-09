@@ -31,58 +31,12 @@
 @media screen and (max-width:499px) {
  .desktop-headbar {display:none;}
  .mobile-headbar {display:flex;}
- #hero {padding:5vh 0 10vh 0;}
- .hero-text {text-align:center;font-size:1.5em;}
- .hero-text-container {align-items:flex-end;padding-top:4vh;}
- .sectionheader {height:164px;}
- .sectionheader h1 {height:30%;}
 }
 
 @media screen and (min-width:500px) {
  .desktop-headbar {display:flex;}
  .mobile-headbar {display:none;}
- #hero {padding:10vh 0;}
- .hero-text h1 {text-align:center;}
  ul .hamburg {display:none;}
- .hero-text-container {align-items:center;}
- .sectionheader {height:200px;}
- .sectionheader h1 {height:10%;}
-}
-
-@media screen and (min-width:750px) {
- .job_div {max-width:80ch;}
- .hero-text {font-size:24px;}
-}
-
-@media only screen and (max-device-width:1366px) {
- #hero {background-attachment:scroll;}
- .bio-card {max-height:40rem;}
-}
-
-@media only screen and (min-device-width:1367px) {
- #hero {background-attachment:fixed;}
- .hero-text {text-align:center;font-size:28px;}
- .bio-card {max-height: 50rem;}
-}
-
-@media screen and (min-width: 1200px) {
- .hero-text {font-size: 36px;}
-}
-
-@media screen and (min-width: 1600px) {
- .hero-text {font-size: 48px;}
-}
-
-@media screen and (min-width: 2000px) {
- .hero-text {font-size: 60px;}
-}
-
-@media screen and (min-width: 2400px) {
- .hero-text {font-size: 72px;}
-}
-
-@media screen and (min-width: 2800px) {
- .hero-text {font-size: 84px;}
 }
 
 html {
@@ -139,25 +93,30 @@ a:hover {
     color:rgb(11, 47, 61);
 }
 
-li a {
- color: var(--whte);
- transition-duration: 0.15s;
-}
-
-li a:hover {
- color: var(--lblue);
-}
-
 .rbutton {
- background-color: var(--lblue);
- transition-duration: 0.15s;
- border-radius:24px;
- padding:.75rem;
- font-family:Outfit;
+    color: var(--blck);
+    background-color: var(--lblue);
+    transition-duration: 0.15s;
+    border-radius:24px;
+    padding:.75rem;
+    font-family:Outfit;
+    display:flex;
+    align-items:center;
+    color:var(--blck);
 }
 
-.navlink .rbutton:hover {
- background-color: var(--whte);
+.rbutton:hover {
+    color: var(--blck);
+    background-color: var(--whte);
+}
+
+.navlink {
+    display: flex;
+}
+
+.navlink a {
+    text-decoration: none;
+    font-size: 18px;
 }
 
 .hamburg {
@@ -184,18 +143,25 @@ p {
  font-family: 'Roboto Slab', serif;
 }
 
-#hero {
-    background-image: url(space.webp);
-    background-position: center;
-    background-size: cover;
-}
+.footer {
+    background-color: var(--blck);
+    width: 100%;
+    min-height: 100px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem 0;
+    color: var(--whte);
+    font-size:1em;
+    text-align:center;
 
-.hero-text-container {
- display:flex;
-}
+    div {
+        display: flex;
+        max-width: 90%;
+    }
 
-.hero-text {
- margin: 0 1rem;
- max-width:80ch;
- text-align:center;
+    p {
+        max-width: 80ch;
+    }
 }
