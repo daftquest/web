@@ -89,7 +89,7 @@
 }
 
 @media screen and (min-width: 2800px) {
- .hero-text {font-size: 84px;}
+ .hero-text {font-size: 3vw;}
 }
 
 html {
@@ -103,12 +103,6 @@ html {
 
 html::-webkit-scrollbar {
     display: none; /* Chrome and the rest */
-}
-
-header {
-    position: sticky;
-    width: 100%;
-    top: 0;
 }
 
 .desktop-headbar {

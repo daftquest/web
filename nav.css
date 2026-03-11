@@ -52,6 +52,13 @@ html::-webkit-scrollbar {
     display: none; /* Chrome and the rest */
 }
 
+header {
+    position: sticky;
+    width: 100%;
+    top: 0;
+    z-index: 9999;
+}
+
 .desktop-headbar {
  background-color: var(--blck);
  align-items:center;
@@ -60,7 +67,6 @@ html::-webkit-scrollbar {
  top: 0;
  width: 100%;
  min-height: 80px;
- z-index: 9999;
 }
 
 .mobile-headbar {
