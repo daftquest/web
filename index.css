@@ -130,7 +130,7 @@ html::-webkit-scrollbar {
 .headbar-name {
     margin: 1rem;
     font-size: 2em;
-    transition: 0.4s ease-in-out;
+    transition: 0.4s ease-out;
 }
 
 .headbar-name a {
@@ -158,7 +158,7 @@ html::-webkit-scrollbar {
 }
 
 #MenuButton {
-    transition: 0.25s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 
 #MenuButton.hidden {
@@ -188,13 +188,13 @@ li a:hover {
 #screen-mobile-nav {
  position: fixed;
  left: -100%;
- height: 100%;
- width: 100%;
+ height: 100vh;
+ width: 100vw;
  background: var(--blck);
  z-index: 9998;
  text-align: center;
  display: block;
- transition: left 0.4s ease-in-out;
+ transition: left 0.3s ease-in-out;
 }
 
 #screen-mobile-nav.active {
