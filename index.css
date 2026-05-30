@@ -56,6 +56,12 @@
  .section_header h2 {height:10%;}
 }
 
+@media (min-width: 500px) {
+    #screen-mobile-nav, #screen-mobile-nav.active {
+        display: none;
+    }
+}
+
 @media screen and (min-width:750px) {
  .job_div {max-width:80ch;}
  .hero-text {font-size:24px;}
@@ -124,13 +130,18 @@ html::-webkit-scrollbar {
  align-items:center;
  justify-content:space-between;
  min-height: 80px;
+ top: 0;
+ width: 100%;
  z-index: 9999;
 }
 
 .headbar-name {
     margin: 1rem;
     font-size: 2em;
-    transition: 0.4s ease-out;
+    z-index: 9998;
+    transition: 0.4s ease;
+    line-height: 1;
+    transform: translateY(-0.0175em);
 }
 
 .headbar-name a {
@@ -150,11 +161,31 @@ html::-webkit-scrollbar {
 
 #navbar-mobile {
  display:flex;
- transition: 0.4s ease-in-out;
+ transition: 0.4s;
 }
 
 #navbar-mobile.hidden {
     transform: translateY(-50vh);
+}
+
+#screen-mobile-nav ul li {
+    opacity: 0;
+}
+
+#screen-mobile-nav.active ul li {
+    animation: fadeIn 0.3s ease forwards;
+    animation-delay: 300ms;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 #MenuButton {
@@ -162,7 +193,16 @@ html::-webkit-scrollbar {
 }
 
 #MenuButton.hidden {
-    transform: translateY(-50vh);
+    transform: translateX(-50vh);
+}
+
+#InMenuButton {
+    top: -50vh;
+    transition: 0.2s;
+}
+
+#InMenuButton.active {
+    top: 0;
 }
 
 #navbar ul li {
@@ -187,18 +227,22 @@ li a:hover {
 
 #screen-mobile-nav {
  position: fixed;
- left: -100%;
- height: 100vh;
+ top: -50%;
+ height: fit-content;
  width: 100vw;
  background: var(--blck);
- z-index: 9998;
+ z-index: 9996;
  text-align: center;
  display: block;
- transition: left 0.3s ease-in-out;
+ transition: top 0.3s ease-in-out;
+}
+
+#screen-mobile-nav ul {
+    z-index: 9993;
 }
 
 #screen-mobile-nav.active {
-    left: 0;
+    top: 0;
 }
 
 h1 {
